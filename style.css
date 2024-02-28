@@ -1,0 +1,299 @@
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+     cursor: pointer;
+     overflow: hidden;
+    font-size: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.imgcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img {
+    width: 400px;
+    height: 250px;
+    background-image: url("img2.png");
+    background-position: center;
+    background-size: cover;
+    Animation: next infinite 15s;
+}
+@keyframes next {
+    0% , 100% {
+        background-image: url("img1.png");
+}
+20% {
+    background-image: url("img3.png");
+}
+40% {
+    background-image: url("img4.png");
+}
+60% {
+    background-image: url("img5.png");
+}
+80% {
+    background-image: url("img6.png");
+}
+100% {
+    background-image: url("img7.png");
+}
+}
+.img2 {
+    width: 400px;
+    height: 250px;
+    background-image: url("xerjoff.1.png");
+    background-position: center;
+    background-size: cover;
+    Animation: back infinite 15s;
+}
+@keyframes back {
+    0% , 100% {
+        background-image: url("xerjoff.2.png");
+}
+20% {
+    background-image: url("xerjoff.3.png");
+}
+40% {
+    background-image: url("xerjoff.4.png");
+}
+60% {
+    background-image: url("xeerjoff.5.png");
+}
+80% {
+    background-image: url("xerjoff.6.png");
+}
+100% {
+    background-image: url("xerjoff.7.png");
+}
+}
+.img3 {
+    width: 400px;
+    height: 250px;
+    background-image: url("1.png");
+    background-position: center;
+    background-size: cover;
+    Animation: again infinite 15s;
+    margin-top: 7px;
+}
+@keyframes again {
+    0% , 100% {
+        background-image: url("2.png");
+}
+20% {
+    background-image: url("3.png");
+}
+40% {
+    background-image: url("4.png");
+}
+60% {
+    background-image: url("5.png");
+}
+80% {
+    background-image: url("6.png");
+}
+100% {
+    background-image: url("7.png");
+}
+}
+.bottomsidecont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    padding-inline: 1rem;
+    color: darkgrey;
+}
+.bottomsidecont p{
+font-size: 2rem;
+letter-spacing: 2rem;
+}
+.ig :hover {
+  transition: 0.5s;
+  scale: 1.2;
+  color: orangered;
+}
+.fb :hover {
+    transition: 0.5s;
+    scale: 1.2;
+    color: blue;
+  }
+  .github :hover {
+    transition: 0.5s;
+    scale: 1.2;
+    color: black;
+  }
+ .blank {
+    width: 400px;
+    height: 350px;
+    
+ }
+ .middlecont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+   margin-top: 100px;
+   margin-right: 400px;
+ }
+.blank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mamakacuroba {
+    width: 800px;
+    height: 450px;
+    border-radius: 0px 20px  20px 0px;
+ }
+ .coloredtext  {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: black;
+   font-size: 35px;
+   position: absolute;
+   top: 5%;
+ }
+ .offer {
+    width: 300px;
+    color: darkgray;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 120px;
+    text-align: center;
+ }
+ .shadowcont {
+    position: absolute;
+    top: -4.5rem;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px 15px rgba(18, 17, 17, 0.662);
+}
+.btn button {
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+.btn button:hover {
+    scale: 1.05;
+    transition: 0.5s;
+    background-color: rgb(88, 146, 30);
+    border: none;
+}
+.middlecont {
+    position: relative;
+    transition: 1s;
+    left: -2000px;
+}
+.imgcont {
+    position: relative;
+    transition: 1s;
+    right: -2000px;
+    transform: translateY(150%);
+    
+}
+ 
+
+@media screen and (max-width: 500px) and (max-height: 1400px) {
+    body {
+    display: flex;
+    justify-content: center;
+       max-width: 500px !important;
+        max-height: 1400px !important;
+       
+    }
+ .coloredtext {
+    font-size: 15px;
+    position: absolute;
+    left: 24px;
+    top: px;
+ }
+.offer {
+    width: 130px;
+    font-size: 8px !important;
+    margin-top: 187px;
+    margin-right: 160px;
+    
+}
+    .shadowcont {
+    position: absolute;
+    left: 0px;
+    align-items: center;
+    justify-content: center !important;
+    width: 300px;
+    height: 200px;
+    
+    }
+  .mamakacuroba {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    left: 130px;
+
+  }
+  .btn button{
+    width: 300px;
+    height: 40px ;
+    margin-bottom: 80px;
+    margin-left: 5px;
+     font-size: 12px;
+   
+}
+
+.imgcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    row-gap: 30px;
+    margin-top: 290px;
+    margin-right: 100px;
+    transform: translateX(0%);
+}
+.img {
+    width: 270px;
+    height: 155px;
+  
+}
+.img2 {
+    width: 270px;
+    height: 155px;
+ 
+}
+.img3 {
+    width: 270px;
+    height: 155px;
+  
+}
+.bottomsidecont {
+   position: absolute;
+   bottom: -120px;
+   left: 0;
+}
+.mamacont {
+display: block;
+margin-left: 25px;
+justify-content: center !important;
+}
+}
